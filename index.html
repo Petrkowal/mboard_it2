@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>Základní deska</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="jumbotron text-center">
+        <h1>Základní deska <small>(motherboard)</small></h1>
+        <h2>hlavní komponenty</h2>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div id="info">
+                    <h3>
+                        Co je základní deska?
+                    </h3>
+                    <div>
+                        <p>
+                            Základní deska je základní součást hardware většiny počítačů. Umožňuje vzájemné propojení
+                            jednotlivých součástí počítače a jejich fungování jako celku.
+                        </p>
+                    </div>
+
+                    <!-- SVG -> fotka z wiki - chipset - klikačka
+                        vysvětlivky a pak teprv test.. Ještě nevím xD) 
+                        
+                        Komponenty jenom zákl. vysvětlivky, v klikačce dát víc infa spíš o bus, rychlosti, etc..
+                        další SVG -> klikačka -> test motherboard (třeba jako.. Poznáte, co je na základovce...? / udělat i
+                    -->
+
+                    <h3>
+                        Komponenty
+                    </h3>
+                    <div id="second">
+                        <h4 id="chipset">
+                            Chipset
+                        </h4>
+                        <p>
+                            Chipset je pojem pro označení skupiny integrovaných obvodů nacházejících
+                            se na
+                            základní desce. Jejich úkolem je propojit všechny prvky základní desky tak, aby se s nimi
+                            mikroprocesor domluvil. Musí být kompatibilní s RAM i CPU.
+                        </p>
+                        <p>
+                            Chipset se skládá ze dvou částí:
+                        </p>
+                        <ul>
+                            <li>
+                                North Bridge (severní most) zajišťuje rychlé přesuny dat mezi klíčovými oblastmi
+                                počítače - CPU,
+                                RAM, grafická karta.
+                                Prochází přes něj také data ke spodní části chipsetu k jižnímu mostu.
+                            </li>
+                            <li>
+                                South Bridge (jižní most) se stará o připojení pomalejších
+                                periferií k základní desce - sériové a paralelní porty, disky, USB rozhraní, zajišťuje
+                                služby BIOSu.
+
+                            </li>
+                        </ul>
+
+                        <h4 id="cpu">
+                            CPU + socket
+                        </h4>
+                        <p>
+                            Procesor (<abbr title="Central Processing unit">CPU</abbr>) je v
+                            informatice označení základní elektronické součásti v počítači, která umí vykonávat strojové
+                            instrukce, ze kterých je tvořen počítačový program a obsluhovat jeho vstupy a výstupy.
+                            Historicky byl CPU složen z velmi mnoha elektronických součástek, avšak kolem roku 1970 byly
+                            všechny potřebné obvody sloučeny do jednoho integrovaného obvodu.
+                            <br>
+                            CPU socket (patice) je elektrická součástka, která se
+                            váže k desce plošnými spoji. Je určen pro velmi vysoký počet kontaktů. Socket CPU poskytuje
+                            mnoho funkcí, včetně fyzické struktury
+                            na podporu procesoru, podpory pro chladič. Nejdůležitější je, že tvoří elektrické rozhraní
+                            jak s CPU tak i s plošnými spoji na desce. Typ zásuvky musí podporovat chipset i CPU.
+                        </p>
+
+                        <h4 id="ram">
+                            RAM
+                        </h4>
+                        <p>
+                            Operační paměť (<abbr title="Random Access Memory">RAM</abbr>) je paměť umožňující čtení i
+                            zápis používaná pro dočasné uložení
+                            zpracovávaných dat a spuštěných programů.
+                            <br>
+                            Přístup k operační paměti je velmi rychlý. Paměť je s procesorem spojena pomocí rychlé
+                            sběrnice, pro další urychlení se mezi procesor a operační paměť vkládá rychlá vyrovnávací
+                            paměť typu cache.
+                            <br>
+                            Operační paměť je nepostradatelný fyzický prostředek, který je spravován jednou z hlavních
+                            části operačního systému. Uchovává nejen kód programů, respektive procesů spolu s
+                            mezivýsledky a výsledky jejich činnosti, ale i stav dalších prostředků a základní datové
+                            struktury jádra.
+                        </p>
+
+
+                        <h4 id="gpu">
+                            Grafická karta
+                        </h4>
+                        <p>
+                            Grafická karta je v informatice součást počítače, jejímž úkolem je vytvářet grafický výstup
+                            na monitoru. Hlavní součástí grafické karty je grafický procesor (GPU), který slouží pro
+                            rychlé a efektivní změny obsahu grafické paměti a tím i změny obrazu na monitoru. Grafická
+                            karta může být integrovaná nebo dedikovaná.
+                        </p>
+
+
+
+
+                        <h4 id="hdd">
+                            Pevný disk
+                        </h4>
+                        <p>
+                            Pevný disk (<abbr title="Hard Disk Drive">HDD</abbr>) je elektromechanické zařízení pro
+                            ukládání dat, jedná se o paměť s velkou kapacitou a s pomalejším přístupem než operační
+                            paměť.
+                            <br>
+                            Hlavními důvody velkého rozšíření pevných disků byla velká kapacita, poměrně rychlý přístup,
+                            spolehlivost a skutečnost, že záznam nevyžaduje trvalé napájení a přitom - na rozdíl od
+                            magnetické pásky - umožňuje přímý přístup k jednotlivým blokům záznamu. Navíc má výhodný
+                            poměr kapacity a ceny disku i dostatečnou rychlost čtení a zápisu dat. Hlavní nevýhodou je
+                            mechanické řešení, které je technologicky náročné, má větší spotřebu elektrické energie,
+                            vyšší hmotnost a je náchylné na poškození při nešetrném zacházení (prach, vlhkost, otřesy
+                            nebo náraz při zápisu/čtení dat).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- SVG -->
+
+
+
+
+
+            <svg width="100mm" height="150mm" version="1.1" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg"
+                xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <g transform="translate(-5 118)">
+                    <rect class="ramsvg" transform="scale(1,-1)" x="155" y=".5" width="25" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect class="chipsetsvg" x="67.971" y="-47.658" width="72.76" height="160.6"
+                        style="fill:none;paint-order:normal;stroke-dasharray:8.00000022, 8.00000022;stroke-linecap:square;stroke-linejoin:bevel;stroke:#f00" />
+                    <rect x="80" y="52" width="50" height="50" style="paint-order:normal;stroke-width:0" />
+                    <rect class="cpusvg" transform="scale(1,-1)" x="92.5" y="63" width="25" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect class="gpusvg" transform="scale(1,-1)" x="30" y=".5" width="25" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect transform="scale(1,-1)" x="80" y="-12" width="50" height="50"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect transform="scale(1,-1)" x="92.5" y="-152" width="25" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect transform="scale(1,-1)" x="155" y="-89.5" width="45" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <rect class="hddsvg" transform="scale(1,-1)" x="10" y="-89.5" width="45" height="25"
+                        style="paint-order:normal;stroke-width:0" />
+                    <text x="87.020828" y="72.764877"
+                        style="fill:#ffffff;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="87.020828" y="72.764877" style="fill:#ffffff;stroke-width:.26458">South</tspan>
+                        <tspan x="87.020828" y="85.994041" style="fill:#ffffff;stroke-width:.26458">Bridge</tspan>
+                    </text>
+                    <text class="chipsetsvg" x="43.629169" y="-51.627079"
+                        style="fill:#ff0100;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan class="chipsetsvg" x="43.629169" y="-51.627079" style="fill:#ff0000;stroke-width:.26458">
+                            Chipset</tspan>
+                    </text>
+                    <text class="gpusvg" x="30.444057" y="-9.5787945"
+                        style="fill:#ffffff;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="30.444057" y="-9.5787945" style="fill:#ffffff;stroke-width:.26458">GPU</tspan>
+                    </text>
+                    <text class="cpusvg" x="93.680023" y="-71.692238"
+                        style="fill:#000000;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="93.680023" y="-71.692238" style="fill:#ffffff;stroke-width:.26458">CPU</tspan>
+                    </text>
+                    <text transform="scale(1.01 .99012)" x="154.28008" y="74.810417"
+                        style="fill:#000000;font-family:sans-serif;font-size:10.023px;letter-spacing:0px;line-height:1.25;stroke-width:.25057;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="154.28008" y="74.810417" style="fill:#ffffff;stroke-width:.25057">Ostatní</tspan>
+                        <tspan x="154.28008" y="87.338997" style="fill:#ffffff;stroke-width:.25057">periferie
+                        </tspan>
+                    </text>
+                    <text transform="scale(.98803 1.0121)" x="94.225418" y="141.76472"
+                        style="fill:#000000;font-family:sans-serif;font-size:8.9922px;letter-spacing:0px;line-height:1.25;stroke-width:.2248;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="94.225418" y="141.76472" style="fill:#ffffff;stroke-width:.2248">BIOS</tspan>
+                    </text>
+                    <text class="hddsvg" x="11.361013" y="80.597931"
+                        style="fill:#ffffff;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="11.361013" y="80.597931" style="fill:#ffffff;stroke-width:.26458">Úložiště</tspan>
+                    </text>
+                    <text class="ramsvg" x="155.37418" y="-10.125821"
+                        style="fill:#ffffff;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="155.37418" y="-10.125821" style="fill:#ffffff;stroke-width:.26458">RAM</tspan>
+                    </text>
+                    <text x="87.814583" y="-16.966665"
+                        style="fill:#ffffff;font-family:sans-serif;font-size:10.583px;letter-spacing:0px;line-height:1.25;stroke-width:.26458;word-spacing:0px"
+                        xml:space="preserve">
+                        <tspan x="87.814583" y="-16.966665" style="fill:#ffffff;stroke-width:.26458">North</tspan>
+                        <tspan x="87.814583" y="-3.737499" style="fill:#ffffff;stroke-width:.26458">Bridge</tspan>
+                    </text>
+                    <rect id="gpubus" class="bus cursor" x="55" y="-15.5" width="25" height="5"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect id="cpubus" class="bus cursor" x="102.5" y="-63" width="5" height="25"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect id="rambus" class="bus cursor" x="130" y="-15.5" width="25" height="5"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect id="hddbus" class="bus cursor" x="55" y="74.5" width="25" height="5"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect class="bus" x="130" y="74.5" width="25" height="5"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect id="nbsb" class="bus cursor" x="102.5" y="12" width="5" height="40"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                    <rect class="bus" x="102.5" y="102" width="5" height="25"
+                        style="fill:#00f;paint-order:normal;stroke-width:0" />
+                </g>
+            </svg>
+            <!-- /SVG -->
+        </div>
+        <div id="photo">
+            <h3>Fotky</h3>
+            <div id="carouselId" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+
+                </ol>
+                <div class="carousel-inner" role="listbox">
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </main>
+    <footer class="text-center">
+        <hr>
+        Krautwurst
+    </footer>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal Heading</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Zavřít</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    border-radius: 100px;
+    width: 100%;
+}
+
+svg * {
+    transition: all 0.5s;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-width: 400px !important;
+}
+
+#carouselId{
+    width: 400px;
+    margin: auto;
+}
+
+#photo img {
+    width: 392px;
+    margin: 10px;
+}
+
+h3 {
+    background-color: red;
+    padding: 10px;
+}
+
+h3:hover {
+    color: rgb(0, 201, 0);
+}
+
+h4 {
+    background-color: #0f0;
+    padding: 5px;
+}
+
+h4:hover {
+    color: #f00;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+text {
+    cursor: default;
+    /* NOSELECT */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
